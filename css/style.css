@@ -6,4 +6,89 @@
 }
 html, body{
     font-family: 'Roboto', sans-serif;
+    line-height: 26px;
+    font-weight: normal;
+}
+.container{
+    max-width: 1199px;
+    margin: auto;
+}
+.btn--1{
+    padding: 20px 35px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    line-height: 18px;
+    outline: none;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+    display: block;
+    transition: all .5s;
+}
+.btn--1:hover{
+    background-position: right center;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+}
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__content .header__nav{
+    display: flex;
+    align-items: center;
+}
+.header__content ul{
+    margin-right: 30px;
+}
+.header__content ul li{
+    display: inline-block;
+    padding: 55px 15px;
+}
+.header__content li a{
+    color: #070120;
+    font-weight: 500;
+    font-size: 15px;
+}
+.header__content ul li i{
+    font-size: 9px;
+}
+.header__content li a span{
+    display: inline-block;
+    transition: all .5s;
+}
+.header__content li a:hover span{
+    animation: navRoll 0.3s;
+    color: #f55f8d;
+}
+.header__content .active{
+    color: #f55f8d;
+}
+
+
+/* ANIMATIOn */
+@keyframes navRoll {
+    49%{
+        transform: translateY(100%);
+    }
+    50%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    51%{
+        opacity: 1;
+    }
 }

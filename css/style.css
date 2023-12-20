@@ -6,7 +6,7 @@
 }
 html, body{
     font-family: 'Roboto', sans-serif;
-    line-height: 26px;
+    line-height: 1.6;
     font-weight: normal;
     color: #636363;
 }
@@ -184,7 +184,49 @@ header{
 .services__img img{
     width: 215px;
 }
-/* ANIMATIOn */
+
+/* ABOUT */
+.about{
+    padding: 115px 0 85px;
+    overflow: hidden;
+    background-image: url(../img/bg15.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+.about__content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.about__img{
+    width: 60%;
+    position: absolute;
+    /* DI CHUYEN RA KHOI THE CHA*/
+    left: -17%;
+}
+.about__detail{
+    width: 50%;
+}
+.about__banner img{
+    width: 100%;
+    border-radius: 0 100px 100px 0;
+}
+.about__banner{
+    margin-right: 90px;
+    width: 100%;
+}
+.about__detail .about__list ul{
+    margin: 15px 0 30px;
+}
+.about__detail .about__list li i{
+    font-size: 24px;
+    color: #f55f8d;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+/* ANIMATION */
 @keyframes navRoll {
     49%{
         transform: translateY(100%);

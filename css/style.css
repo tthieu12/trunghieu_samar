@@ -226,6 +226,44 @@ header{
     margin-right: 10px;
     vertical-align: middle;
 }
+
+/* NUMBER */
+.number{
+    padding: 80px 0 50px;
+    background-image: url(../img/bg14.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.number__content{
+    display: flex;
+    justify-content: space-around;
+}
+.number__item{
+    text-align: center;
+}
+.number__item i{
+    font-size: 45px;
+    color: #fff;
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.number__item p:first-of-type{
+    font-size: 65px;
+    font-weight: 800;
+    color: #f55f8d;
+    line-height: 1;
+}
+.number__item p:last-of-type{
+    font-size: 18px;
+    color: #262626;
+}
+
 /* ANIMATION */
 @keyframes navRoll {
     49%{

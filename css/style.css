@@ -264,6 +264,68 @@ header{
     color: #262626;
 }
 
+/* FEATURES */
+.features{
+    padding-top: 115px;
+    background-image: url(../img/bg2.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.features__content{
+    display: flex;
+    align-items: center;
+}
+.features__detail, .features__img{
+    width: 50%;
+}
+.features__banner{
+    margin-right: -80px;
+}
+.features__img img{
+    max-width: 100%;
+    animation: featureMove 5s infinite;
+}
+.features__item{
+    padding: 0 50px 30px 0;
+}
+.features__bg{
+    background-color: #fff;
+    box-shadow: 0 0 60px 0 rgba(0,0,0,0.1); 
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 30px;
+    transition: all .5s;
+}
+#item--2{
+    padding: 0 0 30px 50px;
+}
+.features__bg i{
+    font-size: 80px;
+    line-height: 1;
+    color: #f55f8d;
+}
+.features__bg .title--1 {
+    text-align: left;
+    padding-left: 25px;
+}
+.features__bg .title--1 h3{
+    margin: 0;
+}
+.features__hover{
+    transition: all 1s;
+}
+.features__bg:hover{
+    background-image: linear-gradient(to right, #f55f8d 0, #f8ae56 51%, #f55f8d 100%);
+    background-size: 200%;
+}
+.features__bg:hover .features__hover{
+    color: #fff;
+}
 /* ANIMATION */
 @keyframes navRoll {
     49%{
@@ -275,5 +337,16 @@ header{
     }
     51%{
         opacity: 1;
+    }
+}
+@keyframes featureMove {
+    0%{
+        transform: rotate(1deg) translate(2px, 2px);
+    }
+    50%{
+        transform: rotate(-1deg) translate(-2px, -2px);
+    }
+    100%{
+        transform: rotate(1deg) translate(2px, 2px);
     }
 }

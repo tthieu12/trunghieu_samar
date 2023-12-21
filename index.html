@@ -28,6 +28,8 @@
     <!-- FANCYBOX -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
+    <!-- OWL-CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -410,7 +412,88 @@
             </div>
         </div>
     </section>
-    <section class="blog"></section>
+    <section class="blog">
+        <div class="container">
+            <div class="title">
+                <p>Our Blog</p>
+                <h2>Latest News &amp; Blog</h2>
+            </div>
+            <div class="blog__content">
+                <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="blog__item">
+                        <div class="blog__header">
+                            <img src="./img/pic1_1.jpg" alt="">
+                            <p>23 MARCH 2022</p>
+                        </div>
+                        <div class="blog__text title--1">
+                            <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum in facere, ipsum
+                                dignissimos adipisci!</p>
+                        </div>
+                        <div class="blog__footer">
+                            <p>
+                                <i class="las la-user-circle"></i>
+                                By
+                                <span>Johne Doe</span>
+                            </p>
+                            <p>
+                                <i class="las la-comment"></i>
+                                <span>Comments 15</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <div class="blog__item">
+                            <div class="blog__header">
+                                <img src="./img/pic2.jpg" alt="">
+                                <p>23 MARCH 2022</p>
+                            </div>
+                            <div class="blog__text title--1">
+                                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum in facere,
+                                    ipsum dignissimos adipisci!</p>
+                            </div>
+                            <div class="blog__footer">
+                                <p>
+                                    <i class="las la-user-circle"></i>
+                                    By
+                                    <span>Johne Doe</span>
+                                </p>
+                                <p>
+                                    <i class="las la-comment"></i>
+                                    <span>Comments 15</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__item">
+                        <div class="blog__item">
+                            <div class="blog__header">
+                                <img src="./img/pic3.jpg" alt="">
+                                <p>23 MARCH 2022</p>
+                            </div>
+                            <div class="blog__text title--1">
+                                <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum in facere,
+                                    ipsum dignissimos adipisci!</p>
+                            </div>
+                            <div class="blog__footer">
+                                <p>
+                                    <i class="las la-user-circle"></i>
+                                    By
+                                    <span>Johne Doe</span>
+                                </p>
+                                <p>
+                                    <i class="las la-comment"></i>
+                                    <span>Comments 15</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <footer></footer>
 
     <!-- JQUERY -->
@@ -441,6 +524,26 @@
     <script>
         Fancybox.bind('[data-fancybox="gallery"]', {
         });
+    </script>
+    <!-- OWL-CAROUSEL -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 30,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
     </script>
 </body>
 

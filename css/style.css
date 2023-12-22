@@ -666,6 +666,33 @@ footer::before{
 .footer__copyright a:hover{
     background-color: #f55f8d;
 }
+
+/* BACK TO TOP */
+.back-to-top{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #f55f8d;
+    display: block;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    color: #fff;
+    box-shadow: -4px 4px 24px -10px #f55f8d;
+    visibility: hidden;
+    opacity: 0;
+}
+.cd-top--is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out {
+  opacity: .5;
+}
+
 /* ANIMATION */
 @keyframes navRoll {
     49%{

@@ -689,10 +689,6 @@ footer::before{
   opacity: 1;
 }
 
-.cd-top--fade-out {
-  opacity: .5;
-}
-
 /* ANIMATION */
 @keyframes navRoll {
     49%{
